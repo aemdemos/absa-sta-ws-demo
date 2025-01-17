@@ -1,0 +1,65 @@
+
+.absa-cards-wrapper .absa-cards > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.absa-cards-wrapper .absa-cards > ul > li {
+  flex: 1 1 calc(33.333% - 10px);
+  margin: 0 5px;
+  border: none;
+  background-color: var(--background-color);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.absa-cards-wrapper .absa-cards-card-image {
+  flex: 0 0 auto;
+  line-height: 0;
+}
+
+.absa-cards-wrapper .absa-cards > ul > li img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.absa-cards-wrapper .absa-cards-card-body {
+  flex: 1 1 auto;
+  margin: 0;
+  padding: 10px 0; /* Adjusted padding to match the original */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensure text starts at the top */
+}
+
+.absa-cards-wrapper .absa-cards-card-body h5 {
+  margin: 10px 0; /* Adjusted margin to match the original */
+  font-weight: 600; /* Ensure heading font weight matches the original */
+}
+
+.absa-cards-wrapper .absa-cards-card-body .button-container {
+  margin-top: 10px; /* Ensure consistent margin above the button */
+}
+
+.absa-cards-wrapper .absa-cards-card-body .button {
+  color: red;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600; /* Ensure font weight matches the original */
+  margin-top: 5px; /* Adjusted margin to match the original */
+}
+
+.absa-cards-wrapper .absa-cards-card-body .button::after {
+  content: ' >';
+}
